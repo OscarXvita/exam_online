@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="OnlineStudy:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/OnlineStudy_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="OnlineStudy" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="mysql-connector-java-5.1.37-bin.jar" module-name="OnlineStudy" />
+          <element id="library" level="module" name="commons-fileupload-1.3.1.jar" module-name="OnlineStudy" />
+          <element id="library" level="module" name="commons-io-2.5-javadoc.jar" module-name="OnlineStudy" />
+          <element id="library" level="module" name="commons-io-2.5.jar" module-name="OnlineStudy" />
+          <element id="library" level="module" name="jxl.jar" module-name="OnlineStudy" />
+          <element id="library" level="module" name="junit4" module-name="OnlineStudy" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/hamcrest-all-1.3.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="OnlineStudy/web/Web" />
+    </root>
+  </artifact>
+</component>

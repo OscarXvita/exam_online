@@ -1,0 +1,14 @@
+
+.myDiv1 {
+	width: 720px;
+	height: 300px;
+	border-bottom: 1px;
+	border-bottom-color: #CCCCCC;
+	background-color: #F3F3F3;
+}
+.myDiv2 {
+	width: 250px;
+	height: 300px;
+	border-bottom: 1px;
+	border-bottom-color: #CCCCCC;
+}
