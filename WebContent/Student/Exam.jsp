@@ -4,6 +4,14 @@
 <%@page import="com.system.service.*"%>
 <%@page import="com.system.util.*"%>
 <%@page import="java.util.*"%>
+<%@ page import="com.system.util.TimeUtil" %>
+<%@ page import="com.system.service.TestService" %>
+<%@ page import="com.system.entity.ObjectQuestion" %>
+<%@ page import="com.system.util.RandomManage" %>
+<%@ page import="com.system.entity.Student" %>
+<%@ page import="com.system.entity.Test" %>
+<%@ page import="com.system.entity.QuestionSpace" %>
+<%@ page import="com.system.service.ObjectQuestionService" %>
 <%
 request.setCharacterEncoding("UTF-8");
 response.setCharacterEncoding("UTF-8");
@@ -23,7 +31,7 @@ response.setCharacterEncoding("UTF-8");
 		space.setBeginTime(request.getParameter("beginTime"));
 		space.setEndTime(request.getParameter("endTime"));
 		Test testInstance = new Test();
-		com.system.util.TimeUtil ti = new com.system.util.TimeUtil();
+		TimeUtil ti = new TimeUtil();
 		String testTime = ti.getTime();
 		java.sql.Date myTestTime=ti.parseStringToDate(testTime);
 		testInstance.setTestTime(testTime);

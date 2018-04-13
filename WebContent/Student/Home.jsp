@@ -3,6 +3,11 @@
 <%@page import="com.system.service.*"%>
 <%@page import="java.util.*"%>
 <%@page import="com.system.entity.*"%>
+<%@ page import="com.system.entity.Teacher" %>
+<%@ page import="com.system.entity.Student" %>
+<%@ page import="com.system.service.ViewTeacherService" %>
+<%@ page import="com.system.entity.Announce" %>
+<%@ page import="com.system.service.AnnounceService" %>
 <%
 request.setCharacterEncoding("UTF-8");
 response.setCharacterEncoding("UTF-8");

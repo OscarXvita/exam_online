@@ -4,6 +4,11 @@
 <%@page import="java.util.*"%>
 <%@page import="com.system.entity.*"%>
 <%@page import="com.system.dataManagement.*"%>
+<%@ page import="com.system.entity.Teacher" %>
+<%@ page import="com.system.service.BindingService" %>
+<%@ page import="com.system.entity.Student" %>
+<%@ page import="com.system.service.ConsultService" %>
+<%@ page import="com.system.dataManagement.ManageStudent" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>

@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.system.service.NormalFileService;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
@@ -18,7 +19,6 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import com.system.entity.SaveFile;
 import com.system.entity.Student;
 import com.system.entity.Teacher;
-import com.system.service.NormalFileService;
 import com.system.util.FileRootFactory;
 
 public class do_upLoadTeacherFile extends HttpServlet {

@@ -5,6 +5,12 @@
 <%@page import="com.system.entity.*"%>
 <%@page import="com.system.service.*"%>
 <%@page import="java.util.*"%>
+<%@ page import="com.system.service.TestService" %>
+<%@ page import="com.system.entity.Teacher" %>
+<%@ page import="com.system.entity.Student" %>
+<%@ page import="com.system.service.ScoreAnalyzeService" %>
+<%@ page import="com.system.entity.Test" %>
+<%@ page import="com.system.entity.QuestionSpace" %>
 <%
 	request.setCharacterEncoding("UTF-8");
 	response.setCharacterEncoding("UTF-8");

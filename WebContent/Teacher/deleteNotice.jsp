@@ -3,6 +3,9 @@
         <%@page import="com.system.service.*"%>
 <%@page import="java.util.*"%>
 <%@page import="com.system.entity.*"%>
+<%@ page import="com.system.entity.Teacher" %>
+<%@ page import="com.system.entity.Announce" %>
+<%@ page import="com.system.service.AnnounceService" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>

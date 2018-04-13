@@ -6,7 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import com.system.entity.*;
+import com.system.entity.ObjectQuestion;
+import com.system.entity.QuestionSpace;
 import com.system.service.ObjectQuestionService;
 
 public class do_addObjectQuestions extends HttpServlet {

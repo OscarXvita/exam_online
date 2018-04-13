@@ -8,6 +8,7 @@ import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Logger;
 
 public class ConnectionFactory {
 	private static String driver;
@@ -20,6 +21,7 @@ public class ConnectionFactory {
 		Properties prop = new Properties();
 		try {
 			InputStream in = ConnectionFactory.class.getClassLoader().getResourceAsStream("dbconfig.properties");
+			//System.out.println(ConnectionFactory.class.getClassLoader().getParent());
 			prop.load(in);
 		} catch (Exception e) {
 			// TODO: handle exception

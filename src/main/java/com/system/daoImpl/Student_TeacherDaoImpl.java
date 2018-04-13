@@ -5,10 +5,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import com.system.util.*;
+
 import com.system.dao.Studnet_TeacherDAO;
 import com.system.entity.Student;
 import com.system.entity.Teacher;
+import com.system.util.TimeUtil;
+
 
 public class Student_TeacherDaoImpl implements Studnet_TeacherDAO {
 
@@ -37,8 +39,8 @@ public class Student_TeacherDaoImpl implements Studnet_TeacherDAO {
 	/*
 	 * (non-Javadoc) 修改状态为1，即绑定成功
 	 * 
-	 * @see com.system.dao.Studnet_TeacherDAO#update(java.sql.Connection,
-	 * com.system.entity.Student, com.system.entity.Teacher)
+	 * @see Studnet_TeacherDAO#update(java.sql.Connection,
+	 * Student, Teacher)
 	 */
 	public void update(Connection conn, Student student, Teacher teacher) throws SQLException {
 		// TODO Auto-generated method stub

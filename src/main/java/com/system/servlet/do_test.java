@@ -11,7 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.system.entity.*;
+import com.system.entity.ObjectAnswer;
+import com.system.entity.ObjectQuestion;
+import com.system.entity.QuestionSpace;
+import com.system.entity.Test;
 import com.system.service.ObjectAnswerService;
 import com.system.service.ObjectQuestionService;
 
@@ -33,7 +36,7 @@ public class do_test extends HttpServlet {
 				Vector<ObjectQuestion> objectQuestionLists = new ObjectQuestionService()
 						.getAllQuestionOfSpace(currentTeacherSpace);
 				if(objectQuestionLists!=null){
-					Map<ObjectQuestion, ObjectAnswer> answerMap=new HashMap<ObjectQuestion, ObjectAnswer>(); 
+					Map<ObjectQuestion, ObjectAnswer> answerMap=new HashMap<ObjectQuestion, ObjectAnswer>();
 					for(int a=0;a<25;a++){
 						ObjectQuestion o = objectQuestionLists.get(array[a]);
 						String temp=request.getParameter(String.valueOf(o.getId()));

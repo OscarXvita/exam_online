@@ -4,6 +4,11 @@
 <%@page import="com.system.service.*"%>
 <%@page import="com.system.util.*"%>
 <%@page import="java.util.*"%>
+<%@ page import="com.system.entity.Teacher" %>
+<%@ page import="com.system.service.NormalFileService" %>
+<%@ page import="com.system.service.BindingService" %>
+<%@ page import="com.system.entity.Student" %>
+<%@ page import="com.system.entity.SaveFile" %>
 <%
 	request.setCharacterEncoding("UTF-8");
 	response.setCharacterEncoding("UTF-8");

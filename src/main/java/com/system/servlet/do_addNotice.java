@@ -10,6 +10,7 @@ import javax.servlet.http.HttpSession;
 import com.system.entity.Announce;
 import com.system.entity.Teacher;
 import com.system.service.AnnounceService;
+import com.system.util.TimeUtil;
 
 public class do_addNotice extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -28,7 +29,7 @@ public class do_addNotice extends HttpServlet {
 				String title = request.getParameter("title");
 				String content = request.getParameter("content");
 				if (title != null && content != null && !title.equals("") && !content.equals("")) {
-					com.system.util.TimeUtil ti = new com.system.util.TimeUtil();
+					TimeUtil ti = new TimeUtil();
 					String time = ti.getTime();
 					Announce notice = new Announce();
 					notice.setContent(content);

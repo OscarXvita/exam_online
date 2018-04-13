@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-import com.system.daoImpl.StudentDaoImpl;
-import com.system.daoImpl.Student_TeacherDaoImpl;
 import com.system.entity.Student;
 import com.system.entity.Teacher;
+import com.system.daoImpl.StudentDaoImpl;
+import com.system.daoImpl.Student_TeacherDaoImpl;
 import com.system.util.ConnectionFactory;
 
 public class BindingService {

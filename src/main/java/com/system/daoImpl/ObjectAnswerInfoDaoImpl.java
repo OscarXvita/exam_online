@@ -8,7 +8,6 @@ import java.sql.SQLException;
 import com.system.dao.ObjectAnswerInfoDao;
 import com.system.entity.ObjectAnswer;
 import com.system.entity.ObjectQuestion;
-
 import com.system.entity.Test;
 
 public class ObjectAnswerInfoDaoImpl implements ObjectAnswerInfoDao {

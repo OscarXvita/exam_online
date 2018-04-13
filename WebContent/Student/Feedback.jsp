@@ -3,6 +3,7 @@
 <%@page import="com.system.entity.*"%>
 <%@page import="com.system.service.*"%>
 <%@page import="java.util.*"%>
+<%@ page import="com.system.entity.Student" %>
 
 <%
 	request.setCharacterEncoding("UTF-8");//设置编码方式

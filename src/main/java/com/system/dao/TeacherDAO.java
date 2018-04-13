@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.system.entity.*;
+import com.system.entity.Teacher;
 
 public interface TeacherDAO {
 	void insert(Connection conn, Teacher teacher) throws SQLException;

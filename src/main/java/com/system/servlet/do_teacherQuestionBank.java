@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 import com.system.entity.QuestionSpace;
 import com.system.entity.Teacher;
 import com.system.service.QuestionSpaceService;
+import com.system.util.TimeUtil;
 
 
 public class do_teacherQuestionBank extends HttpServlet {
@@ -37,7 +38,7 @@ public class do_teacherQuestionBank extends HttpServlet {
 					QuestionSpace teacherBank=new QuestionSpace();
 					teacherBank.setName(bankName);
 					teacherBank.setType(teacherBankType);
-					new com.system.util.TimeUtil();
+					new TimeUtil();
 					teacherBank.setBeginTime(startTime);
 					teacherBank.setEndTime(endTime);
 					teacherBank.setAmount(Integer.parseInt(amount));
